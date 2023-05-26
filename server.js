@@ -4,14 +4,14 @@ const queryParameters = new URLSearchParams({
   grant_type: 'client_credentials'
 });
 
-const required_ids = Buffer.from('987ded46633f4a2b9382690566a09c6c:9144e07e02db48bfaee0d5aed2737163');
+const required_ids = Buffer.from('8260cb49e7274906ad6af18d9c8f63ca:08e425987a624763b8dec94b15f9986a');
 const encoded = required_ids.toString('base64');
 
 console.log(encoded);
 
 const headerParameters = {
-    'Content-Type': 'application/x-www-form-urlencoded',
-    'Authorization': 'Basic '+ encoded
+  'Content-Type': 'application/x-www-form-urlencoded',
+  'Authorization': 'Basic ' + encoded
 }
 
 const options = {
