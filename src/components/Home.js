@@ -5,8 +5,8 @@ import NewReleases from "./NewReleases";
 const Home = (props) =>{
     return(
         <>
-           <FeaturedPlaylists data={props?.data?.access_token}/> 
-           <NewReleases data={props?.data?.access_token}/>
+           <FeaturedPlaylists data={props.data.access_token}/> 
+           <NewReleases data={props.data.access_token}/>
         </> 
            
     );        
